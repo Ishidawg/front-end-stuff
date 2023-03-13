@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title> <!--Nome, no topo da página-->
+    <h1>Cardápio</h1> <!--Título-->
+    
+    <style> 
+    /*Estilo da página*/
+    body{
+        font: normal 20px Arial;
+    }
+    </style>
+</head>
+<body>
+    Seja Bem Vindo!</br>
+</br>
+    Pratos:</br>
+    01 - Macarrão </br>
+    02 - Lasanha </br>
+    03 - Pizza </br>
+    04 - Sopa de letrinha </br>
+    05 - Feijão com arroz </br>
+    </br>
+    <p>Escolha seu prato: <input type="text" name="prato" id="prato">
+    <input type="button" value="verificar" onclick="verificar()">
+    <input type="button" value="Limpar" onclick="limpar()" id="limparid">
+    <div id="res">
+
+    <script>
+        function verificar(){ //verifica qual é o prato, de 1 a 5.
+            var prato = document.querySelector('input#prato')
+            var res = document.querySelector('div#res')
+            var prato2 = prato.value
+            
+            if (prato2 == '1'){
+                res.innerHTML = 'Aproveite seu macarrão!'
+            } else if (prato2 == '2'){
+                res.innerHTML = 'Aproveite sua lasanha!'
+            } else if (prato2 == '3'){
+                res.innerHTML = 'Aproveite sua Pizza'
+            } else if (prato2 == '4'){
+                res.innerHTML = 'Aproveite sua Sopa de letrinha!'
+            } else if (prato2 == '5'){
+                res.innerHTML = 'Aproveite seu Feijão com arroz!'
+            } else if (prato2 > '5'){
+                res.innerHTML = 'Não temos esse prato, escolha outro por favor!'
+            } else {
+
+            }
+        }
+
+        function limpar(){ //limpa o prato escolhido e o resultado
+            document.querySelector('input#prato').value = ''
+            document.querySelector('div#res').innerHTML = ''
+        }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+:root {
+    --body-bg: white;
+    --text-color: black;
+    --border-color: #ddd;
+    --button-hover: white;
+    --border-hover: rgb(190, 190, 190);
+    --section-bg: rgba(226, 226, 226, 0.480);
+    --submit-color: rgb(0, 0, 0);
+    --input-bg: white;
+    --input-color: black;
+    --button-bg: rgb(245, 245, 245);
+    --input-focus: rgb(190, 190, 190);
+    --darkmodeLabel-color: black;
+}
+
+.dark-mode:root {
+    --body-bg: rgb(32, 32, 32);
+    --text-color: rgb(255, 255, 255);
+    --border-color: rgb(70, 70, 70);
+    --button-hover: rgb(20, 20, 20);
+    --border-hover: rgb(60, 60, 60);
+    --section-bg: rgba(56, 56, 56, 0.48);
+    --submit-color: white;
+    --input-bg: rgb(32, 32, 32);
+    --input-color: rgb(255, 255, 255);
+    --button-bg: rgb(32, 32, 32);
+    --input-focus: rgb(60, 60, 60);
+    --darkmodeLabel-color: white;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    border-color: #ddd;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 4em;
+    top: 1.2em;
+}
+
+section {
+    position: relative;
+    margin: auto;
+    top: 6em;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: var(--section-bg);
+    box-shadow: 1.4px 1.4px 4px rgba(0, 0, 0, 0.185)
+}
+
+#textLabel {
+    position: relative;
+    top: 2em;
+    margin-top: 20px;
+    font-size: 1.28em;
+}
+
+input {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 260px;
+    height: 32px;
+    position: relative;
+    top: 2.8em;
+    border-radius: 6px;
+    border: 2px solid var(--border-color);
+    font-size: 1.28em;
+    background-color: var(--input-bg);
+    color: var(--input-color);
+}
+
+input:focus {
+    outline-color: var(--input-focus);
+}
+
+button {
+    position: relative;
+    top: 3.2em;
+    font-size: 1.28em;
+    width: 260px;
+    height: 32px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--submit-color);
+    background-color: var(--button-bg);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    border-color: var(--border-hover);
+}
+
+#res {
+    position: relative;
+    top: 80px;
+    color: var(--text-color);
+    font-size: 1.28em;
+}
+
+#checkbox {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 20px;
+}
+
+#dark-mode-label {
+    position: absolute;
+    top: 18px;
+    left: 42px;
+    color: var(--darkmodeLabel-color);
+}

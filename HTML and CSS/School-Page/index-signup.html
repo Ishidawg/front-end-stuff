@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Willian S. Cagol">
+    <title>Inscrição</title>
+
+    <!--Links-->
+    <link rel="stylesheet" href="style-signup.css"> <!--CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font Import-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Font Import-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!--Font Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">  <!--Font Heebo 600px-->
+    <link rel="icon" type="image/x-icon" href="./Imagens/Logo/fav-icon-transparent.png"> <!--Fav icon-->
+
+</head>
+<body>
+    <h1>INSCRIÇÃO</h1>
+    <form>
+        <section class="main-section">
+            <div id="typing-box">
+                <input type="text" id="name" class="typing-box" placeholder="Digite seu nome Completo" required>
+            </div>
+            <div id="typing-box">
+                <input type="password" id="password" class="typing-box" placeholder="Digite sua senha" required>
+            </div>
+            <div id="typing-box">
+                <input type="email" id="email" class="typing-box" placeholder="Digite seu email" required>
+            </div>
+            <div id="birth-box">
+                <input type="date" id="date" class="typing-box" required>
+            </div>
+            <div id="typing-box">
+                <input type="number" id="cpf" class="typing-box" placeholder="Digite seu CPF - somente números" required>
+            </div>
+            <div id="typing-box">
+                <input type="tel" id="phone" class="typing-box" placeholder="Digite seu número de telefone" required>
+            </div>
+        </section>
+        <section class="gender radio-settings">
+            <div id="radio-select">
+                <label for="sexm" id="sexm-label">Masculino</label>
+                    <input type="radio" id="sexm" name="gender" required>
+            </div>
+            <div id="radio-select">
+                <label for="sexf" id="sexf-label">Feminino</label>
+                    <input type="radio" id="sexf" name="gender" required>
+            </div>
+        </section>
+        <section class="courses radio-settings">
+            <div id="radio-select">
+                <label for="info" id="info-label">Informática </label>
+                    <input type="radio" id="info" name="course" required>
+            </div>
+            <div id="radio-select">
+                <label for="adm" id="adm-label">Administração</label>
+                    <input type="radio" id="adm" name="course" required>
+            </div>
+        </section>
+        <button type="submit">Inscreva-se</button>
+    </form>
+</body>
+</html>

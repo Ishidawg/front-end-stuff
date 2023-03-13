@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twice Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculators</h1>
+
+    <input type="number" name="m1" id="m1">
+    <input type="number" name="m2" id="m2">
+    <input type="button" value="Multiply" id="btnm" onclick="mult()">
+
+    <input type="number" name="s1" id="s1">
+    <input type="number" name="s2" id="s2">
+    <input type="button" value="Add" id="btna" onclick="add()">
+
+    <input type="number" name="d1" id="d1">
+    <input type="number" name="d2" id="d2">
+    <input type="button" value="Split" id="btns" onclick="split()">
+
+    <div id="res">
+        Result:
+    </div>
+
+    <script>
+        function mult() {
+            let t1 = document.getElementById('m1')
+            let t2 = document.getElementById('m2')
+            let resultm = document.getElementById('res')
+            let n1 = Number(t1.value)
+            let n2 = Number(t2.value)
+            let m = n1 * n2
+
+            resultm.innerHTML = `Result is: ${m}`
+        }
+        function add() {
+            let t3 = document.getElementById('s1')
+            let t4 = document.getElementById('s2')
+            let resultadd = document.getElementById('res')
+            let n3 = Number(t3.value)
+            let n4 = Number(t4.value)
+            let add = n3 + n4
+
+            resultadd.innerHTML = `Result is: ${add}`
+        }
+        function split(){
+            let t5 = document.getElementById('d1')
+            let t6 = document.getElementById('d2')
+            results = document.getElementById('res')
+            let n5 = Number(t5.value)
+            let n6 = Number(t6.value)
+            let split = n5 / n6
+
+            results.innerHTML = `Result is: ${split}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <h1>Cardápio</h1>
+</head>
+<body>
+    Escolha um prato de 01 á 03:<input id="numero" type="number">
+   <input type="button" value="Verificar" onclick="exibir()">
+   <input type="button" value="Limpar" onclick="limpar()">
+</br>
+</br>
+   01 - Macarrão</br>
+   02 - Espaguete</br>
+   03 - Pizza</br>
+</br>
+   <div id="resultado">
+    
+   <script>
+       function exibir(){
+     var prato = parseInt(document.getElementById("numero").value);
+     var resultado = document.querySelector('div#resultado')
+     
+     switch(prato){
+      case 1:
+          resultado.innerHTML = "Aproveite seu macarrão!"
+          break;
+      case 2:
+          resultado.innerHTML = "Aproveite seu espaguete!"
+          break;
+      case 3:
+          resultado.innerHTML = "Aproveite sua pizza!"
+          break;
+        }
+
+        function limpar(){
+            document.querySelector('input#numero').value = ''
+            document.querySelector('div#resultado').innerHTML = ''
+        }
+
+
+
+
+
+    }
+
+
+   </script>
+</body>
+</html>

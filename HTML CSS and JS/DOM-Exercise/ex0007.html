@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM</title>
+    <style>
+        body{
+            background-color: brown;
+            color: white;
+            font: normal 18pt Arial;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.363);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="t1">Exercícios DOM</h1>
+    <h2>Esse aqui é um título secundário</h2>
+    <p>Parágrafo criado pq eu queria criar um Parágrafo</p>
+    <p>Esse é um segundo paragrafo pq eu queria um segundo parágrafo</p>
+
+    <script>
+        //var gostaconfirm = gosta == true ? 'Legal!' : 'Pq não?'
+        var t1 = document.getElementsByTagName('h1')[0]
+        var t2 = document.getElementsByTagName('h2')[0]
+        var p1 = document.getElementsByTagName('p')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+        var copyp1 = document.write('<p id="para1"><strong>Replica do parágrado 1:</strong>' + p1.innerHTML + '<br></p>')
+        var copyp2 = document.write('<p id="para2"><strong>Replica do parágrafo 2:</strong> ' + p2.innerHTML + '<br></p>')
+        var pp1 = document.getElementById("para1")
+        var pp2 = document.getElementById("para2")
+        t1.style.color = 'lightblue'
+        t1.style.background = 'white'
+        t2.style.color = 'white'
+        t2.style.background = 'lightblue'
+        p1.style.color = 'green'
+        p1.style.background = 'white'
+        p2.style.color = 'green'
+        p2.style.background = 'white'
+        pp1.style.color = 'darkgreen'
+        pp1.style.background = 'lightblue'
+        pp2.style.color = 'darkgreen'
+        pp2.style.background = 'lightblue'
+        var nome = prompt("Qual é seu nome?")
+        document.write(`<p id='bemvindo'><strong>Pergunta 1: </strong>Seja bem vindo ${nome}! <br></p>`)
+        var gosta = confirm('Você está gostando de JavaScript?')
+        if (gosta == true) {
+            document.write('<p id="massa"><strong>Pergunta 2: </strong>QUE MASSA! <br></p>')
+        } else{
+            document.write('<p style="color: black; background: white;"><strong>Pergunta 2: </strong>Pq não? Ah da uma chance vai...<br></p>')
+        }
+        var bv = document.getElementById("bemvindo")
+        var mss = document.getElementById("massa")
+        bv.style.color = 'black'
+        bv.style.background = 'white'
+        mss.style.color = 'black'
+        mss.style.background = 'white'
+    </script>
+</body>
+</html>

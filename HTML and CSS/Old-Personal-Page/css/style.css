@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #12181B;
+    --gray: #2A2E35;
+    --light-gray: #B2BECD;
+    --hr-color : #b2becd8e;
+    --accent-color: #c5460b;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Secular One', sans-serif;
+    overflow-x: hidden;
+}
+
+/* === NAV BAR === */
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--gray);
+    height: 80px;
+    font-size: 1.4rem;
+}
+
+.topnav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.topnav-menu {
+    display: flex;
+    margin-right: 188px;
+    list-style: none;
+}
+
+.topnav-item {
+    margin: auto 20px;
+}
+
+.topnav-link {
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    color: var(--light-gray);
+    transition: color 0.2s linear;
+}
+
+.topnav-link:hover {
+    color: #ffffff;
+}
+
+/* === MAIN ===*/
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.division {
+    margin: auto;
+    width: 86%;
+    border: dashed 1px var(--hr-color);
+    grid-column: 1/3;
+}
+
+.box-1 {
+    color: var(--light-gray);
+    padding: 60px 240px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    text-align: justify;
+    grid-column: 1/3;
+}
+
+.box-1 h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    line-height: 8rem;
+}
+
+.highlight {
+    color: #ffffff;
+}
+
+.orange-highlight {
+    color: var(--accent-color);
+}
+
+.orange-highlight a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.box-2 h1{
+    font-family: 'Secular One', sans-serif;
+    color: #ffffff;
+    font-size: 2.2rem;
+    line-height: 8rem;
+}
+
+.box-2 {
+    color: var(--light-gray);
+    padding: 10px;
+    padding-left: 240px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: justify;
+    grid-column: 1/2;
+    height: 466px;
+}
+
+.aside-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 466px;
+    grid-column: 2/3;
+}
+
+.img-setting {
+    border-radius: 14px;
+    width: 340px;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.img-setting:hover {
+    transform: translateY(-2px);
+}
+
+.btn-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box-2 a {
+    margin-top: 52px;
+    border-radius: 14px;
+    border-style: solid;
+    border-color: var(--light-gray);
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--light-gray);
+    width: 100%;
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+
+.btn-box-2 a:hover {
+    border-radius: 14px;
+    border-style: solid;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.box-3 {
+    color: var(--light-gray);
+    padding: 10px 240px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: justify;
+    grid-column: 1/3;
+}
+
+.box-3 h1 {
+    font-family: 'Secular One', sans-serif;
+    color: #ffffff;
+    font-size: 2.2rem;
+    line-height: 8rem;
+}

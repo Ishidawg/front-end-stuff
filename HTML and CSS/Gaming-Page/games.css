@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("svg/layered-waves-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    text-rendering:optimizeLegibility;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.skyrim {
+    max-width: 400px;
+    max-height: 800px;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.skyrim-box-image {
+    max-height: 200px;
+}
+
+.skyrim-img {
+    width: 440px;
+}
+
+.skytim-box-txt {
+    padding: .8em;
+}
+
+.dark-souls {
+    max-width: 400px;
+    max-height: 800px;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.dark-souls-box-image {
+    max-height: 200px;
+}
+
+.dark-souls-img {
+    width: 400px;
+}
+
+.dark-souls-box-txt {
+    padding: .8em;
+}

@@ -1,0 +1,78 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Signika', sans-serif;
+    color: #fde3c6;
+    /*
+    color: #ffffff; (white hex code), used before.
+    */
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+}
+
+h1 {
+    text-decoration-line: overline;
+    font-size: 60px;
+    position: relative;
+    left: 327px;
+    top: 100px;
+}
+
+p {
+    text-align: center;
+    position: relative;
+    top: 160px;
+    font-size: 20px;
+}
+
+section {
+    font-size: 20px;
+    position: relative;
+    top: 180px;
+    left: 327px;
+}
+
+select {
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+    width: 140px;
+    height: 28px;
+    padding: 2px;
+    color: rgb(37, 37, 37);
+    background-color: #fde3c6;
+    border: none;
+    border-radius: 4px;
+}
+
+option {
+    color: rgb(37, 37, 37)
+}
+
+button {
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    left: 26px;
+    bottom: 2px;
+    width: 80px;
+    height: 28px;
+    padding: 2px;
+    color: rgb(37, 37, 37);
+    background-color: #fde3c6;
+    border: none;
+    border-radius: 4px;
+}
+
+#res {
+    position: relative;
+    top: 194px;
+    left: 327px;
+    font-size: 20px;
+}

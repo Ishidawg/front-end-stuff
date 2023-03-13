@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício</h1>
+    <p>Este é o parágrafo número <strong>1</strong></p>
+    <p>Este é o parágrafo número <strong>2</strong></p>
+    <div id="msg">Esta é uma DIV</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+        var d = document.querySelector('div#msg')
+        var a = document.write('Parágrafo 1: ' + p1.innerHTML + "<br>")
+        var b = document.write('Parágrafo 2: ' + p2.innerHTML)
+        p1.style.color = 'red'
+        p1.style.background = 'yellow'
+        p2.style.color = 'yellow'
+        p2.style.background = 'red'
+        d.style.background = 'brown'
+        d.style.color = 'yellow'
+        a.style.background = 'green' //Não da para modificar o estilo de um parágrafo innerHTML em var.
+        b.style.color = 'red' //Não da para modificar o estilo de um parágrafo innerHTML em var.
+    </script>
+</body>
+</html>

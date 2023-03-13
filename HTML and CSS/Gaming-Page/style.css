@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("svg/wave-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-tabler-device-gamepad-2 {
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.icon-tabler-device-gamepad-2:hover {
+    scale: 1.05;
+    transform: rotate(-4deg);
+}
+
+.wave {
+    position: relative;
+    bottom: 400px;
+}

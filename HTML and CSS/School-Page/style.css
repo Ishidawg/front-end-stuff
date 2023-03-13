@@ -1,0 +1,204 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(27,77,62);
+    background-image: linear-gradient(20deg, rgba(27,77,62,1) 0%, rgba(1,135,73,1) 100%);
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.075);
+}
+
+#nav-logo {
+    margin: 6px 40px;
+    width: 160px;
+    backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#nav-icons {
+    float: right;
+    margin: 10px 40px;
+}
+
+.nav-icons-settings{
+    height: auto;
+    width: 54px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.075);
+}
+
+#login {
+    margin-right: 14px;
+}
+
+#main-message {
+    margin: auto;
+    margin-top: 60px;
+    color: rgb(27,77,62);
+    background-color: rgb(255, 255, 255);
+    /*width: 36.4% --Old way to get it--*/
+    width: 580px;
+    height: 166px;
+    border-radius: 8px;
+}
+
+#main-message article {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#panels {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+#panels img {
+    display: flex;
+    margin: auto;
+    width: 100px;
+}
+
+#panels ul li {
+    list-style: none;
+    padding: 2px;
+}
+
+#panels h3 {
+    color: rgb(27,77,62);
+    padding: 10px;
+}
+
+
+
+#ti-panel {
+    float: left;
+    margin-right: 100px;
+    background-color: white;
+    width: 240px;
+    height: 280px;
+    border-radius: 8px;
+    fill: rgb(27,77,62);
+}
+
+#adm-panel {
+    float: right;
+    background-color: white;
+    width: 240px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+.course-vectors {
+    filter: invert(800%) sepia(200%) saturate(4000%) hue-rotate(60deg) brightness(60%);
+}
+
+#last-block a {
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    /*width: 36.4%; --Old way to get it--*/
+    width: 580px;
+    border-radius: 8px;
+    color: white;
+    background-color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    color: rgb(27,77,62);
+    transition: 0.4s ease;
+}
+
+#last-block a:hover {
+    color: white;
+    width: 610px;
+    background-color: rgba(1,135,73,1);
+    text-shadow: 0px 1px 2px black;
+}
+
+footer {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.075);
+}
+
+.contact {
+    color: rgb(27,77,62);
+    margin: auto;
+    float: left;
+}
+
+.contact ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.contact ul li {
+    padding-top: 4px;
+}
+.gov {
+    margin: auto;
+    margin-left: 1000px;
+}
+
+.gov img {
+    width: 160px;
+}
+
+/* Blinking animation */
+.typing-box {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top:20px
+}
+
+.typing-message {
+    font-family: 'Heebo', sans-serif;
+    color: rgb(27,77,62);
+    width: 342px;
+    animation: typing 1.6s steps(26), blink .6s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-size: 2em;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}

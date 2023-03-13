@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(7, 165, 228);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 150px;
+}
+h1 {
+    padding-top: 40px;
+}
+div#all {
+    background-color: rgba(115, 7, 165, 0.774);
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(86, 4, 124, 0.295);
+}
+input#txt1 {
+    font-size: 14pt;
+    text-align: center;
+    color: rgba(86, 5, 124, 0.774);
+    width: 80px;
+    height: 42px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+input#txt2 {
+    font-size: 14pt;
+    text-align: center;
+    color: rgba(86, 5, 124, 0.774);
+    width: 80px;
+    height: 42px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+input#btn {
+    position: absolute;
+    font-size: 14pt;
+    text-align: center;
+    width: 92px;
+    height: 46px;
+    margin: auto;
+    text-align: center;
+    margin-top: 220px;
+    margin-left: -44px;
+    border: 2px solid #ddd;
+    color: rgba(86, 5, 124, 0.774);
+    border-radius: 8px;
+    padding-bottom: auto;
+
+}
+div#result {
+    background-color: rgba(115, 7, 165, 0.774);
+    font: normal 20pt Arial;
+    margin: auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 400px;
+    padding-top: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(86, 4, 124, 0.295);
+}

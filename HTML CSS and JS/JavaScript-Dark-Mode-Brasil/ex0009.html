@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.123);
+            margin-top: 120px;
+        }
+        h1#titulo {
+            text-align: center;
+        }
+        p#dados {
+            font-size: 25px;
+            text-align: center;
+        }
+        p#infonome {
+            text-align: center;
+        }
+        p#infopais{
+            text-align: center;
+        }
+        input#nome {
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            margin-left: 25px;
+            height: 30px;
+            font-size: 12pt;
+        }
+        input#pais {
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            margin-left: 41px;
+            height: 30px;
+            font-size: 12pt;
+        }
+        div#btns {
+            text-align: center;
+        }
+        input#calc {
+            font-size: 16px;
+            height: 32px;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            background-color: white;
+        }
+        input#limp {
+            height: 32px;
+            font-size: 16px;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            background-color: white;
+        }
+        input#dark {
+            height: 32px;
+            font-size: 16px;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            background-color: white;
+        }
+        input#light {
+            height: 32px;
+            font-size: 16px;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            background-color: white;
+        }
+        div#resultado {
+            margin: auto;
+            text-align: center;
+            border-radius: 6px;
+            width: 380px;
+        }
+        div#all {
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            margin: auto;
+            background-color: rgb(236, 236, 236);
+            height: 460px;
+            width: 620px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <h1 id="titulo">Nacionalidade Brasileira</h1>
+        <p id="dados">Informe seu nome e país.</p>
+        <p id="infonome">Nome: <input type="text" id="nome">
+        <p id="infopais">País: <input type="text" id="pais">
+        <div id="btns">
+            <input type="button" id="calc" value="Verificar" onclick="calcular()">
+            <input type="button" id="limp" value="Limpar" onclick="limpar()">
+            <input type="button" id="dark" value ="Modo escuro" onclick="escuro()">
+            <input type="button" id="light" value="Modo claro" onclick="claro()">
+        </div>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        function calcular() {
+            var nome = document.getElementById('nome')
+            var nomefinal = String(nome.value)
+            var pais = document.getElementById('pais')
+            var paisfinal = String(pais.value)
+            var resultado = document.getElementById('resultado')
+
+            if (paisfinal == 'Brasil') {
+                resultado.style.background = 'lightgreen'
+                resultado.innerHTML = `<p>Seu pais: <strong>${paisfinal}</strong></p>`
+                resultado.innerHTML += `Olá ${nomefinal}, você é brasileiro!`
+            } else {
+                resultado.style.background = 'rgba(255, 103, 103, 0.959)'
+                resultado.innerHTML = `<p>Seu pais: <strong>${paisfinal}</strong></p>`
+                resultado.innerHTML +=`Olá ${nomefinal}, você é estrangeiro!`
+            }
+        }
+
+        function limpar() {
+            document.getElementById('nome').value = ""
+            document.getElementById('pais').value = ""
+            document.getElementById('resultado').innerHTML = ""
+        }
+
+        function escuro() {
+            document.getElementsByTagName('body')[0].style.background = 'rgb(28, 28, 28)'
+            document.getElementById('titulo').style.color = 'white'
+            document.getElementById('dados').style.color = 'white'
+            document.getElementById('infonome').style.color = 'white'
+            document.getElementById('infopais').style.color = 'white'
+            document.getElementById('resultado').style.color = 'white'
+            document.getElementById('all').style.background = 'rgb(80, 80, 80)'
+        }
+        function claro() {
+            document.getElementsByTagName('body')[0].style.background = 'white'
+            document.getElementById('titulo').style.color = 'black'
+            document.getElementById('dados').style.color = 'black'
+            document.getElementById('infonome').style.color = 'black'
+            document.getElementById('infopais').style.color = 'black'
+            document.getElementById('resultado').style.color = 'black'
+            document.getElementById('all').style.background = 'rgb(236, 236, 236)'
+        }
+    </script>
+</body>
+</html>

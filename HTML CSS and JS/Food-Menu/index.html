@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Signika:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Menu</h1>
+        <p>Welcome to the most limited menu worldwide! Below you find selection menu... you know what you to do yeah?</p>
+        <section id="section">
+            <label for="menu">Make your choice: </label>
+            <select name="menu" id="menu">
+                <option value="1" id="option">Strogonoff</option>
+                <option value="2" id="option">Pasta</option>
+                <option value="3" id="option">Pizza</option>
+                <option value="4" id="option">Hamburguer</option>
+            </select>
+            <button type="submit" onclick="submit(this)">Submit</button>
+        </section>
+        <div id="res"></div>
+    </main>
+</body>
+</html>

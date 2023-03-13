@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="button" id="btn" value="Calculate" onclick="add()">
+
+    <div id="all">
+    <h1>Add Calculator</h1>
+    <input type="text" name="txt1" id="txt1"> +
+    <input type="text" name="txt2" id="txt2">
+    </div>
+ 
+    
+    <div id="result">Result:</div>
+
+    <script>
+        function add() {
+            var t1 = document.getElementById('txt1')
+            var t2 = document.getElementById('txt2')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var res = document.getElementById('result')
+            var end = n1 + n2
+            res.innerHTML = `Result is: <strong>${end}</strong>`
+        }
+    </script>
+</body>
+</html>

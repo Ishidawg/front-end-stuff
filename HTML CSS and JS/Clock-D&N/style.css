@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.boxContent {
+    width: 680px;
+    height: 220px;
+    background-color: rgba(32, 32, 32, 0.438);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.190);
+}
+
+#time {
+    color: white;
+    font: normal 100px Arial;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.219);
+    text-align: center;
+    padding-top: 20px;
+}
+
+#dayWeek {
+    color: white;
+    font: normal 46px Arial;
+    text-shadow: 2px 2px 2px rgba(136, 22, 22, 0.219);
+    text-align: center;
+    padding-top: 5px;
+}
+
+#dayNum {
+    color: white;
+    font: normal 46px Arial;
+    text-shadow: 2px 2px 2px rgba(136, 22, 22, 0.219);
+    text-align: center;
+    padding-top: 5px;
+}

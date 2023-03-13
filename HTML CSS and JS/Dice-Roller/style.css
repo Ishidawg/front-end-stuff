@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 4em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.376);
+}
+
+body {
+    background-image: url('images/wood_bkg.jpg');
+    background-size: cover;
+}
+
+section {
+    background-image: url('images/lava.jpg');
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(75, 213, 255);
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 40px 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+}
+
+#txt {
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    font: normal 3em Arial;
+    height: 80px;
+    width: 190px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 40px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.376);
+    background-image: url('images/rock2.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#btn {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 60px;
+    font-size: 3em;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 40px;
+    background-image: url('images/rock.jpg');
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.376);
+}
+
+#diceres {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.376);
+    margin-top: 36px;
+    text-align: center;
+    font: normal 3em Arial;
+}
