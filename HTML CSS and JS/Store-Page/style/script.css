@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Home Page */
+
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2.2em;
+}
+
+.home-text {
+    background-color: #161616;
+    color: #e5e5e5;
+
+    text-align: center;
+    font-size: 1.5em;
+
+    padding: 0.75em 1.6em;
+}
+
+.home-games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2em;
+
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.home-franchise {
+    padding: 0.75em;
+
+    background-color: #161616;
+    color: #e5e5e5;
+}
+
+.home-franchise-txt {
+    /* font-family: "Bebas Neue", cursive; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-transform: uppercase;
+    font-weight: 500;
+
+    margin-bottom: 0.5em;
+}
+
+.home-games-box {
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+}
+
+/* Dark Souls Page */
+
+.games-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2.5em;
+}
+
+.game-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.game-title img {
+    margin-top: 0.3em;
+    width: 38px;
+}
+
+.game-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    padding: 0.75em;
+}
+
+.image-box img {
+    image-rendering: crisp-edges;
+
+    box-shadow: 0.8px 0.8px 2px 0 #00000031;
+
+    max-width: 300px;
+
+    transition: transform 0.2s ease, scale 0.5s ease;
+}
+
+.image-box img:hover {
+    transform: translateY(-16px);
+    scale: 1.08;
+}

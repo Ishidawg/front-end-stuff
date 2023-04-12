@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./style/store.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="render()">
+    <header class="header">
+        <nav class="nav">
+            <!-- <input type="button" value="Home" class="btn home" onclick="homerender()"> -->
+            <ul>
+                <li>
+                    <button class="btn" onclick="homerender()">
+                        <img src="./images/home.svg" alt="Home">
+                    </button>
+                </li>
+                <li>
+                    <input type="button" value="Dark Souls" class="btn" onclick="darksoulsrender()">
+                </li>
+                <li>
+                    <input type="button" value="The Witcher" class="btn" onclick="thewitcherrender()">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container"></div>
+</body>
+</html>

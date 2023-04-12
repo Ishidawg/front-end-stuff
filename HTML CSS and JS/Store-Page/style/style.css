@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(208, 208, 208, 1) 100%
+    );
+
+    line-height: 3em;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 4.3em;
+    /*font-size: 2.8em;*/
+}
+
+.slogan {
+    font-size: 1.2em;
+}
+
+/*
+.start {
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none;
+
+    padding: 0.4em 1.6em;
+    margin-top: 1em;
+
+    background-color: #00ab66;
+    color: #fff;
+    border: 0.2em solid #4ee5a9;
+    box-shadow: 0 0 2px 1px #00000014;
+
+    transition: all 0.8s ease;
+}
+
+.start:hover {
+    text-shadow: 0.8px 0.8px 1.5px #00000028;
+
+    background-color: #4ee5a9;
+    border-color: #00ab66;
+}
+*/
+
+.sif-button {
+    image-rendering: crisp-edges;
+    margin-top: 2em;
+    transition: scale 0.4s ease;
+}
+
+.sif-button:hover {
+    scale: 1.1;
+}
