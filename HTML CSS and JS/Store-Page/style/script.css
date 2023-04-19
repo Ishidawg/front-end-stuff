@@ -27,8 +27,8 @@ body {
 }
 
 .home-text {
-    background-color: #161616;
-    color: #e5e5e5;
+    /* background-color: #161616; */
+    color: #161616;
 
     text-align: center;
     font-size: 1.5em;
@@ -52,8 +52,9 @@ body {
 .home-franchise {
     padding: 0.75em;
 
-    background-color: #161616;
-    color: #e5e5e5;
+    background-color: #16161610;
+    border-radius: 0.5em;
+    color: #161616;
 }
 
 .home-franchise-txt {
@@ -67,12 +68,6 @@ body {
 
 .home-games-box {
     list-style: none;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        overflow: auto;
-    }
 }
 
 /* Dark Souls Page */
@@ -128,4 +123,112 @@ body {
 .image-box img:hover {
     transform: translateY(-16px);
     scale: 1.08;
+    cursor: pointer;
+}
+
+.details-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2.5em;
+
+    margin-top: 15em;
+}
+
+.image-box-details img {
+    image-rendering: crisp-edges;
+
+    box-shadow: 0.8px 0.8px 2px 0 #00000031;
+
+    max-width: 300px;
+
+    transition: transform 0.2s ease, scale 0.5s ease;
+}
+
+.image-box-details img:hover {
+    transform: translateY(-16px);
+    scale: 1.08;
+}
+
+.game-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    max-width: 500px;
+
+    padding: 0.75em;
+}
+
+.details-article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.game-title-details {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.game-text-details {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.price {
+    color: #099f09;
+    font-size: 1.5em;
+}
+
+.game-details button {
+    border: none;
+    background-color: #161616;
+    color: #fff;
+    width: 100%;
+    padding: 0.75em;
+
+    border-radius: 0.5em;
+
+    font-size: 1.5em;
+
+    transition: background-color 0.6s ease;
+}
+
+.game-details button:hover {
+    background-color: #323232;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+
+    .details-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 2.5em;
+
+        margin-top: 4em;
+    }
+
+    .game-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        max-width: 500px;
+
+        padding: 1.2em;
+    }
 }
