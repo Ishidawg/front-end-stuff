@@ -1,6 +1,6 @@
 # Front-end stuff 🐱‍💻
 
-**HTML, CSS and JS.**
+**HTML, CSS and JS (sometimes a framework aswell).**
 
 **Thing like:**
 ```
